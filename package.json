@@ -1,0 +1,22 @@
+{
+  "name": "aula01",
+  "version": "1.0.0",
+  "description": "Aula 01 frameworks express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronyellison/frameworksWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronyellison/frameworksWeb/issues"
+  },
+  "homepage": "https://github.com/ronyellison/frameworksWeb#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
