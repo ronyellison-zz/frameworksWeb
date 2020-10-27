@@ -18,11 +18,18 @@ con.connect((err) => {
 })
 
 const agendamento = {nome:'Ronyellison', email: 'ronyjp@gmail.com', ativo:0 }
-/*inserindo*/
-con.query('INSERT INTO agendamento SET ? ', agendamento, (err,rows) => {
-    if(err) throw err
-    console.log("Registro salvo com sucesso");
-})
+// /*inserindo*/
+// con.query('INSERT INTO agendamento SET ? ', agendamento, (err,rows) => {
+//     if(err) throw err
+//     console.log("Registro salvo com sucesso");
+// })
+
+// /*selecionar, listar */
+// con.query('select * from agendamento', (err,rows) => {
+//     if(err) throw err
+//     res.render('registros.ejs', { data: results })
+//     console.log('Agendamentos', rows, '\n\n')
+// })
 
 // /*atualizar */
 // con.query('UPDATE agendamento SET nome = ?, email = ? where ID = ? ', ['Teste','ronyjp@gmail.com','1'], (err,rows) => {
@@ -37,12 +44,7 @@ con.query('INSERT INTO agendamento SET ? ', agendamento, (err,rows) => {
 
 // })
 
-/*selecionar, listar */
-con.query('select * from agendamento', (err,rows) => {
-    if(err) throw err
-    res.render('registros.ejs', { data: results })
-    console.log('Agendamentos', rows, '\n\n')
-})
+
 
 con.query('select * from agendamento', (err,rows) => {
     if(err) throw err
