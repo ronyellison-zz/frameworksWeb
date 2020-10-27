@@ -1,12 +1,13 @@
 
 module.exports = {
-    development: {
-        database: {
-            host:'localhost', //o gost do banco do banco.
-            port: 3306, //porta de acesso ao banco
-            user:'root', // usuario do banco
-            password: '', //senha do banco
-            database: 'agendamento' //no da base de dados
+    development : {
+            database : {
+                host: 'localhost', // O host do banco. Ex: localhost
+                port: '3306', // Porta a ser utilizada para conexão com o banco
+                user: 'root', // Um usuário do banco.  
+                password: '', // A senha do usuário. 
+                database: 'agendamento' // Nome da base de dados que vai ser utilizada
         }
     }
-}
+
+};
